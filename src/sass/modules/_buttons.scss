@@ -1,0 +1,48 @@
+.Button {
+  min-width: 100px;
+  height: 40px;
+  background: #fff;
+  color: #003256;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font: 700 16px/40px Arial;
+  padding: 0 12px;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background: darken(#fff, 5%);
+    color: #003256;
+  }
+}
+
+.Button-orange {
+  @extend .Button;
+
+  color: #fff;
+  background: #ebac20;
+
+  &:hover,
+  &:focus {
+    background: darken(#ebac20, 5%);
+    color: #fff;
+  }
+}
+
+.Tag,
+.Button-neutral {
+  @extend .Button;
+
+  min-width: 115px;
+  color: #fff;
+  background: #5C7C93;
+
+  &:hover,
+  &:focus {
+    background: darken(#5C7C93, 5%);
+    color: #fff;
+  }
+}

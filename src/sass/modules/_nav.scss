@@ -1,0 +1,60 @@
+$topnav-height: 123px;
+
+.TopNavigation {
+  height: $topnav-height;
+  background: #f8f8f8;
+
+  nav {
+    float: left;
+
+    a {
+      display: inline-block;
+      line-height: $topnav-height;
+      height: $topnav-height;
+      font-size: 16px;
+      color: #777;
+      text-transform: lowercase;
+      padding: 0 25px;
+
+      &:hover,
+      &:focus {
+        background: #91be4b;
+        color: #f8f8f8;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .Social {
+    float: right;
+    line-height: $topnav-height;
+    height: $topnav-height;
+  }
+}
+
+.BottomNav nav {
+  a {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 20px;
+    color: #777;
+    text-transform: uppercase;
+    padding: 0 3px;
+    margin-right: 38px;
+
+    &.selected {
+      color: #91be4b;
+
+      &:hover,
+      &:focus {
+        color: #91be4b;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: #777;
+    }
+  }
+}

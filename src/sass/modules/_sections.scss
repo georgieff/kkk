@@ -1,0 +1,61 @@
+.white-content {
+  background: #fff;
+  max-width: 750px;
+  padding: 50px 0;
+}
+
+.Section-left {
+  @extend %mcf;
+
+  position: relative;
+  display: inline-block;
+  left: -65px;
+  max-width: 685px;
+  margin-bottom: 110px;
+
+  img {
+    max-width: 100%;
+  }
+
+  .content {
+    position: absolute;
+    background: #fff;
+    right: -85px;
+    bottom: 0;
+    max-width: 470px;
+    padding-left: 35px;
+  }
+
+  .Button-orange {
+    position: relative;
+    bottom: -20px;
+  }
+
+  p {
+    margin: 0 0 10px;
+    font: 17px/1.4 Arial, Segoe UI, sans-serif;
+    color: #003256;
+  }
+
+  h2 {
+    font-size: 31px;
+    margin: 23px 0 20px;
+  }
+}
+
+.Section-right {
+  @extend .Section-left;
+
+  left: auto;
+  right: -65px;
+  float: right;
+
+  .content {
+    right: auto;
+    bottom: auto;
+    left: -85px;
+    top: 0;
+    padding-left: 0;
+    padding-right: 35px;
+  }
+}
